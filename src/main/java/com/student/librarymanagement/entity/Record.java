@@ -1,5 +1,6 @@
 package com.student.librarymanagement.entity;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,20 +11,16 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="student")
-public class Student {
+public class Record {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String name;
-    private Integer roll;
-    private String session;
-    private String email;
-    private String mobile;
-    private String department;
-
-    @Lob
-    @Column(columnDefinition =  "MEDIUMBLOB")
-    private String image;
+    private String roll;
+    private String issueDate;
+    private String returnDate;
+    private String bookName;
+    private String status;
+    private String fineStatus;
+    private String fine;
 }

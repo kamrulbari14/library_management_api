@@ -4,7 +4,7 @@ import com.student.librarymanagement.entity.Admin;
 
 public interface AdminService {
 
-    public boolean getAdmin(String email);
+    boolean getAdmin(String email);
 
-    public void saveAdmin(Admin admin);
+    void saveAdmin(Admin admin);
 }
